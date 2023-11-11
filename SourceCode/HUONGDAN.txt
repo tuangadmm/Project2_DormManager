@@ -1,0 +1,16 @@
+Lần đầu cài đặt
+	Chỉnh sửa thông tin database tại SourceCode\dommanager\src\main\java\database\Database.java
+	Thông tin cần sửa
+  		HOSTNAME: địa chỉ MySQL Server
+		PORT: port của MySQL Server
+		USERNAME: username đăng nhập MySQL Server
+		PASSWORD: mật khẩu đăng nhập MySQL Server
+
+Lưu ý: Ứng dụng chạy lần đầu sẽ tự động khởi tạo database và thông tin cần thiết
+
+Đăng nhập: 
+	Username/Password mặc định: admin/admin
+	
+	Học sinh đăng nhập:
+		Username: email đã đăng ký
+		Password: số điện thoại

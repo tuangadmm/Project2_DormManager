@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="1024" prefHeight="576.0" prefWidth="822.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.SceneController">
+   <children>
+      <ImageView fitHeight="592.0" fitWidth="835.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/bg-small.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="240.0" layoutY="14.0" text="Add new manager account" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="130.0" text="Manager Id" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aAId" disable="true" layoutX="182.0" layoutY="128.0" opacity="0.8" prefHeight="32.0" prefWidth="182.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Line endX="-100.0" endY="301.2545166015625" layoutX="514.0" layoutY="157.0" startX="-100.0" startY="-91.47273254394531" />
+      <Label layoutX="449.0" layoutY="221.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aAEmail" layoutX="555.0" layoutY="219.0" prefHeight="32.0" prefWidth="209.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="51.0" layoutY="318.0" text="Password" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="221.0" text="Username" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aAUsername" layoutX="182.0" layoutY="220.0" prefHeight="32.0" prefWidth="182.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="452.0" layoutY="412.0" text="Address" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aAAddress" layoutX="555.0" layoutY="410.0" prefHeight="32.0" prefWidth="209.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="452.0" layoutY="318.0" text="Phone" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aAPhone" layoutX="555.0" layoutY="315.0" prefHeight="32.0" prefWidth="209.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="51.0" layoutY="411.0" text="Role" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="aARole" layoutX="182.0" layoutY="408.0" prefHeight="32.0" prefWidth="182.0" />
+      <Button fx:id="addNewAccountBtn" layoutX="352.0" layoutY="517.0" mnemonicParsing="false" onAction="#addNewAccount" style="-fx-background-color: #D9FBA7;" text="Add manager">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="aAUsernameError" alignment="CENTER" layoutX="181.0" layoutY="262.0" prefHeight="24.0" prefWidth="182.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="aAEmailError" alignment="CENTER" layoutX="555.0" layoutY="250.0" prefHeight="23.0" prefWidth="209.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="aAPhoneError" alignment="CENTER" layoutX="555.0" layoutY="345.0" prefHeight="23.0" prefWidth="209.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="449.0" layoutY="130.0" text="Full name" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="aAName" layoutX="553.0" layoutY="128.0" prefHeight="32.0" prefWidth="209.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="aAPasswordError" alignment="CENTER" layoutX="181.0" layoutY="357.0" prefHeight="24.0" prefWidth="182.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="aANameError" alignment="CENTER" layoutX="553.0" layoutY="160.0" prefHeight="23.0" prefWidth="209.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="aAPassword" layoutX="182.0" layoutY="315.0" prefHeight="26.0" prefWidth="182.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="1280.0" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.SceneController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/bg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="247.0" layoutY="4.0" prefHeight="89.0" prefWidth="1024.0" style="-fx-background-color: transparent;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="176.0" layoutY="14.0" text="Dorm Manager" textFill="WHITE">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="54.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Main/admin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="187.0" layoutY="106.0" prefHeight="685.0" prefWidth="1079.0">
+         <children>
+            <Pane layoutX="60.0" layoutY="30.0" prefHeight="200.0" prefWidth="399.0" style="-fx-background-color: ECFDD3;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="75.0" layoutX="172.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/student.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="totalStudent" alignment="CENTER" layoutX="95.0" layoutY="85.0" prefHeight="31.0" prefWidth="206.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="136.0" layoutY="116.0" prefHeight="27.0" prefWidth="123.0" text="Total student">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="621.0" layoutY="30.0" prefHeight="200.0" prefWidth="399.0" style="-fx-background-color: ECFDD3;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="75.0" layoutX="172.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/room-1.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="totalRoom" alignment="CENTER" layoutX="97.0" layoutY="85.0" prefHeight="31.0" prefWidth="206.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="139.0" layoutY="116.0" prefHeight="27.0" prefWidth="123.0" text="Total room">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="60.0" layoutY="321.0" prefHeight="200.0" prefWidth="399.0" style="-fx-background-color: ECFDD3;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="75.0" layoutX="172.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/room.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="emptyRoom" alignment="CENTER" layoutX="97.0" layoutY="100.0" prefHeight="31.0" prefWidth="206.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="138.0" layoutY="131.0" prefHeight="27.0" prefWidth="123.0" text="Empty slot">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="621.0" layoutY="321.0" prefHeight="200.0" prefWidth="399.0" style="-fx-background-color: ECFDD3;">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="75.0" layoutX="172.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/bill.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="109.0" prefHeight="27.0" prefWidth="55.0" text="Water">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="waterBill" alignment="CENTER" layoutX="136.0" layoutY="107.0" prefHeight="31.0" prefWidth="261.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="21.0" layoutY="136.0" prefHeight="27.0" prefWidth="84.0" text="Electricity">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="electricityBill" alignment="CENTER" layoutX="136.0" layoutY="134.0" prefHeight="31.0" prefWidth="262.0" text="0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="800.0" prefWidth="206.0" style="-fx-background-color: transparent;">
+         <children>
+            <Button alignment="BASELINE_LEFT" layoutY="607.0" mnemonicParsing="false" onAction="#setting" prefHeight="59.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="  Setting" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/cog-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="193.0" mnemonicParsing="false" onAction="#dashboard" opacity="0.69" prefHeight="59.0" prefWidth="200.0" style="-fx-background-color: #D9FBA7;" text="  Dashboard">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/dashboard.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="252.0" mnemonicParsing="false" onAction="#student" prefHeight="59.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="  Students" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/student-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="311.0" mnemonicParsing="false" onAction="#room" prefHeight="59.0" prefWidth="195.0" style="-fx-background-color: transparent;" text="  Rooms" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/room-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="371.0" mnemonicParsing="false" onAction="#bill" prefHeight="59.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="  Bills" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/bill-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="430.0" mnemonicParsing="false" onAction="#account" prefHeight="59.0" prefWidth="173.0" style="-fx-background-color: transparent;" text="  Account" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/manager-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutY="740.0" mnemonicParsing="false" onAction="#logout" opacity="0.69" prefHeight="45.0" prefWidth="173.0" style="-fx-background-color: ECFDD3;" text="Logout">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="name" alignment="CENTER" layoutX="7.0" layoutY="95.0" prefHeight="30.0" prefWidth="162.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="role" alignment="CENTER" layoutX="6.0" layoutY="125.0" prefHeight="30.0" prefWidth="162.0" text="Role" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button alignment="BASELINE_LEFT" layoutY="489.0" mnemonicParsing="false" onAction="#announcement" prefHeight="59.0" prefWidth="200.0" style="-fx-background-color: transparent;" text=" Announcement" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/bell-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutY="548.0" mnemonicParsing="false" onAction="#feedback" prefHeight="59.0" prefWidth="173.0" style="-fx-background-color: transparent;" text=" Feedback" textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="45" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/feedback-w.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
